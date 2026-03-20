@@ -1,0 +1,13 @@
+{
+  "name": "claude-ask-questions",
+  "owner": { "name": "scottrigby" },
+  "plugins": [
+    {
+      "name": "claude-ask-questions",
+      "source": {
+        "source": "github",
+        "repo": "scottrigby/claude-ask-questions"
+      }
+    }
+  ]
+}
