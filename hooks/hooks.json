@@ -5,7 +5,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "jq -n '{hookSpecificOutput: {hookEventName: \"UserPromptSubmit\", additionalContext: \"IMPORTANT: If you need to ask the user any questions, you MUST use the AskUserQuestion tool — never ask questions in plain response text. AskUserQuestion may be a deferred tool: if it is not yet loaded, first call ToolSearch with query \\\"AskUserQuestion\\\" to fetch its schema, then call the tool.\"}}'"
+            "command": "jq -n '{hookSpecificOutput: {hookEventName: \"UserPromptSubmit\", additionalContext: \"IMPORTANT: If you need to ask the user any questions, you MUST use the AskUserQuestion tool — never ask questions in plain response text. AskUserQuestion may be a deferred tool: if it is not yet loaded, first call ToolSearch with query \\\"AskUserQuestion\\\" to fetch its schema, then call the tool.\"}}'",
+            "description": "Inject instruction to use AskUserQuestion tool for all questions"
           }
         ]
       }

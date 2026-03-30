@@ -1,13 +1,13 @@
 {
   "name": "claude-ask-questions",
-  "owner": { "name": "scottrigby" },
+  "owner": {
+    "name": "Scott Rigby"
+  },
   "plugins": [
     {
       "name": "claude-ask-questions",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/scottrigby/claude-ask-questions"
-      }
+      "source": "./",
+      "description": "Instructs Claude to use the AskUserQuestion tool instead of asking questions in response text"
     }
   ]
 }
